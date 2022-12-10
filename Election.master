@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Election.master.cs" Inherits="Election" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 127px;
+        }
+        .auto-style2 {
+            width: 169px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <table style="width:1340px;height:116px; background-image: url('Projimg/header.jpg');">
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td style="text-align: center; font-size: x-large; color: #FFFFFF;">
+                COLLEGE ONLINE ELECTION SYSTEM
+            </td>
+        </tr>
+    </table>
+        <table style="height: 284px; width: 228px">
+            <tr>
+                <td style="vertical-align:top;" class="auto-style2">
+                    <table style="height: 327px; width: 160px">
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/staffhome.aspx">Home</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/newelection.aspx">New Election</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/addvoters.aspx">Add Voters</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/viewelection.aspx">View Election</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Staffviewresult.aspx">View Results</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Viewcandidates.aspx">View Candidates</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/clearelection.aspx">Clear Election & Result</asp:HyperLink>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/index.aspx">Logout</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align:top;">
+                      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                       </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+      
+    </div>
+    </form>
+</body>
+</html>
